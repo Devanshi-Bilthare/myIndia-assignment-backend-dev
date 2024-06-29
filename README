@@ -1,0 +1,32 @@
+### Installation
+1. Clone the repository:
+   ```bash
+   git clone "repo link"
+
+2. Install dependencies:
+    cd your-repo
+    npm install
+
+3. Set up environment variables:
+    Create a .env configure your KEY_ID, KEY_SECRET, and MONGODB_URL.
+
+4.Start the server:
+    npm start
+
+### API Endpoints
+1. User Management
+        Create User: POST /users/create
+        Login: POST /users/login
+        Logout: POST /users/logout
+        Delete User: GET /users/delete/:id
+2. Product Management
+        List Products: GET /products/
+        Create Product: POST /products/create
+        Update Product: POST /products/update/:id
+        Delete Product: GET /products/delete/:id
+3. Order Processing
+        Add Order: POST /products/addorder/:id
+        Create Order: POST /products/createorder
+
+4. Mock Integrations
+        Payment Gateway (Razorpay)
